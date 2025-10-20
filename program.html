@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program | NetteFest</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top, #1a001f, #000);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      color: #bb55ff;
+      font-weight: 700;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #bb55ff;
+    }
+
+    .program-section {
+      padding: 100px 10%;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .program-section h2 {
+      font-size: 2.8em;
+      color: #bb55ff;
+      margin-bottom: 50px;
+      text-shadow: 0 0 15px #bb55ff;
+    }
+
+    .schedule {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .event-card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .event-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 0 15px rgba(187, 85, 255, 0.4);
+    }
+
+    .event-time {
+      color: #bb55ff;
+      font-weight: 600;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .event-name {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .event-desc {
+      color: #ccc;
+      font-size: 0.95em;
+    }
+
+    footer {
+      background: #000;
+      padding: 30px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NETTFEST</h1>
+    <nav>
+      <a href="index.html">Domů</a>
+      <a href="about.html">O nás</a>
+      <a href="program.html" style="color:#bb55ff;">Program</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="program-section">
+    <h2>Program festivalu</h2>
+    <div class="schedule">
+      <div class="event-card">
+        <div class="event-time">10:00</div>
+        <div class="event-name">Zahájení a přivítání</div>
+        <div class="event-desc">Oficiální otevření festivalu, úvodní slovo organizátorů a hostů.</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-time">11:00</div>
+        <div class="event-name">TechTalk Stage</div>
+        <div class="event-desc">Prezentace o budoucnosti webového vývoje, AI a open-source komunitě.</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-time">13:00</div>
+        <div class="event-name">Oběd & Networking</div>
+        <div class="event-desc">Volný čas pro účastníky k seznámení, sdílení nápadů a relaxaci.</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-time">15:00</div>
+        <div class="event-name">Workshop: Tvorba moderního webu</div>
+        <div class="event-desc">Praktický workshop zaměřený na moderní frontend frameworky.</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-time">18:00</div>
+        <div class="event-name">Večerní show</div>
+        <div class="event-desc">Hudební a vizuální vystoupení na hlavní stage s LED efekty.</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-time">21:00</div>
+        <div class="event-name">Afterparty</div>
+        <div class="event-desc">Zakončení dne ve stylu — hudba, světla, atmosféra.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 NetteFest. Všechna práva vyhrazena.
+  </footer>
+</body>
+</html>
